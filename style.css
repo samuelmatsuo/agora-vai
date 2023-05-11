@@ -6,6 +6,7 @@
 }
 
 .flex-container > a {
+  text-align: center;
   width: 100px;
   margin: 10px;
   text-align: center;
@@ -42,9 +43,9 @@ img {
   text-align: center;
   font-family: "Sigmar", cursive;
   font-size: 60px;
-  position: relative;
+  position: center;
 }
-.title::before {
+.title:hover::before {
   content: attr(data-text);
   position: absolute;
   color: white;
