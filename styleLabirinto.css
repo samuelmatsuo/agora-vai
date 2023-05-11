@@ -1,0 +1,49 @@
+.maze {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    border: 1px solid #333;
+    position: relative;
+  }
+  
+  .maze .wall {
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    position: absolute;
+  }
+  
+  .maze .start {
+    background-color: green;
+  }
+  
+  .maze .end {
+    background-color: red;
+  }
+  
+  .maze .player {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: top 0.1s linear, left 0.1s linear;
+  }
+  
+  .maze .player.move-up {
+    top: -20px;
+  }
+  
+  .maze .player.move-down {
+    top: 20px;
+  }
+  
+  .maze .player.move-left {
+    left: -20px;
+  }
+  
+  .maze .player.move-right {
+    left: 20px;
+  }
+  
