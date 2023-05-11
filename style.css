@@ -1,9 +1,8 @@
 /* esse style é para a tela inicial "index.html" */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 .flex-container {
   display: flex;
@@ -33,13 +32,11 @@ body {
   background-color: rgb(185, 185, 185);
 }
 
-
 /* .title:hover{
   animation-name: my-animation;
   animation-duration: 2s;
 
 } */
-
 
 img {
   width: 200px;
@@ -61,7 +58,6 @@ img {
   border-right: 4px solid #fff;
   animation: textAnimation 5s linear infinite;
   filter: drop-shadow(0 0 20px #fff) drop-shadow(0 0 100px #fff);
-  
 }
 
 @keyframes textAnimation {
@@ -73,7 +69,6 @@ img {
   70%,
   90% {
     width: 653px;
-    
   }
 }
 
@@ -93,25 +88,25 @@ img {
   50% {
     transform: scale(1);
   }
-} 
- 
-body{
+}
+
+body {
   display: flex;
   justify-content: center;
   min-height: 100vh;
   background: linear-gradient(45deg, #03a9f4 #ff53a0);
 }
-ul{
+ul {
   margin-top: 100px;
   position: relative;
-  transform-style:preserve-3d;
+  transform-style: preserve-3d;
   perspective: 500px;
   display: flex;
   flex-direction: column;
   gap: 0;
   transition: 0.5s;
 }
-ul li{
+ul li {
   position: relative;
   list-style: 40px;
   width: 450px;
@@ -122,61 +117,88 @@ ul li{
   justify-content: flex-start;
   align-items: center;
   border-radius: 6px;
-  box-shadow: 0 -14px 20px rgba(0,0,0,0.25);
+  box-shadow: 0 -14px 20px rgba(0, 0, 0, 0.25);
   transition: 0.5s;
   transition-delay: calc(var(--i) * 0.5s);
 }
-ul li:nth-child(1){
+ul li:nth-child(1) {
   transform: translateZ(-75px) translateY(20px);
   opacity: 0.6;
 }
-ul li:nth-child(3){
+ul li:nth-child(3) {
   transform: translateZ(75px) translateY(-30px);
   background: #eee;
 }
-ul li:nth-child(4){
+ul li:nth-child(4) {
   transform: translateZ(150px) translateY(-75px);
   background: #fff;
 }
-ul:hover{
+ul:hover {
   gap: 30px;
 }
 ul:hover li {
   opacity: 1;
   background: #fff;
   transform: translateZ(0px) translateY(0px);
-
 }
-ul li img{
+ul li img {
   max-width: 70px;
   border-radius: 4px;
 }
-ul li .content{
+ul li .content {
   width: 100%;
   cursor: pointer;
 }
-ul li .content h4{
+ul li .content h4 {
   font-weight: 600;
   color: #333;
 }
-ul li .content p{
+ul li .content p {
   position: relative;
   color: #333;
   line-height: 1em;
   width: 100%;
 }
-u li .content p span{
+u li .content p span {
   position: absolute;
   color: #888;
   top: 0;
   right: 0;
   font-size: #888;
-
 }
 
-a{
-
+a {
   text-decoration: none;
   color: #333;
   font-family: "Sigmar", cursive;
 }
+
+.assinatura {
+  height: 16px;
+  top: 55px;
+  left: 610px;
+  position: relative;
+}
+.assinatura span {
+  position: relative;
+  display: inline-block;
+  animation: ass 2s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+  animation-play-state: paused;
+}
+
+.assinatura:hover span {
+  animation-play-state: running;
+}
+
+@keyframes ass {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-5px);
+  }
+}
+
