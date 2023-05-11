@@ -1,4 +1,5 @@
 /*esse style é para a tela inicial "index.html"*/
+
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
@@ -13,35 +14,59 @@
   text-decoration: none;
   color: black;
 }
-  .flex-container > a:hover{
+.flex-container > a:hover {
   animation-name: spin;
   animation-duration: 0.5s;
   transform-origin: 100% 42%;
+}
+body {
+  display: inline;
 }
 
 .bodyHome {
   background-color: rgb(185, 185, 185);
 }
-.title {
-  text-align: center;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 60px;
-}
 
+/* 
 .title:hover{
   animation-name: my-animation;
   animation-duration: 2s;
 
+} */
+
+
+img {
+  width: 200px;
+}
+.title {
+  text-align: center;
+  font-family: "Sigmar", cursive;
+  font-size: 60px;
+  position: relative;
+}
+.title::before {
+  content: attr(data-text);
+  position: absolute;
+  color: white;
+  width: 350px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid #fff;
+  animation: textAnimation 5s linear infinite;
+  filter: drop-shadow(0 0 20px #fff) drop-shadow(0 0 50px #fff);
+  
 }
 
-@keyframes my-animation {
-  0% {
-    transform: scale(0.8);
+@keyframes textAnimation {
+  0%,
+  10%,
+  100% {
+    width: 0%;
   }
-  50% {
-    transform: scale(1);
+  70%,
+  90% {
+    width: 653px;
   }
- 
 }
 
 @keyframes spin {
@@ -53,6 +78,11 @@
   }
 }
 
-img{
-  width: 200px;
+@keyframes my-animation {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1);
+  }
 }
