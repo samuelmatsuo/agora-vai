@@ -38,6 +38,10 @@ body {
   transform: translate(-50%, -50%) rotateY(180deg);
   filter: hue-rotate(300deg);
 }
+.container .square:nth-child(6) {
+  transform: translate(-100%, -100%) rotateX(180deg);
+  filter: hue-rotate(200deg);
+}
 .container .square::before {
   content: "";
   position: absolute;

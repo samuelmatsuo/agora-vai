@@ -54,7 +54,7 @@ img {
   white-space: nowrap;
   border-right: 4px solid #fff;
   animation: textAnimation 5s linear infinite;
-  filter: drop-shadow(0 0 20px #fff) drop-shadow(0 0 50px #fff);
+  filter: drop-shadow(0 0 20px #fff) drop-shadow(0 0 100px #fff);
   
 }
 
