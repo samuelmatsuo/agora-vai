@@ -9,11 +9,19 @@
   </head>
   <img src="imgSusto.png" id="imagem" style="display: none" />
 
-  <video id = "videoMeme" width="100%" height="100%" style="display: none;" controls>
-    <source src="meme.mp4" type="video/mp4">
+  <video
+    id="videoMeme"
+    width="100%"
+    height="100%"
+    style="display: none"
+    controls
+  >
+    <source src="meme.mp4" type="video/mp4" />
   </video>
+  <audio id="susto">
+    <source src="jumpscare.mp3" type="audio/mpeg" />
+  </audio>
   <body>
-    
     <div class="maze">
       <!-- parede externa aqui -->
       <div class="wall" style="top: -20px; left: 0px"></div>
@@ -425,10 +433,6 @@
         style="top: 240px; left: 240px; background-color: brown"
       ></div>
       <div class="player"></div>
-      <audio id="susto">
-        <source src="jumpscare.mp3" type="audio/mpeg" />
-      </audio>
-      
     </div>
     <script>
       const player = document.querySelector(".player");
@@ -436,8 +440,7 @@
       const maze = document.querySelector(".maze");
       const audio = document.getElementById("susto");
       const imgSusto = document.getElementById("imagem");
-      const memeVideo = document.getElementById("videoMeme")
-
+      const memeVideo = document.getElementById("videoMeme");
 
       let isGameOver = false;
 
@@ -520,8 +523,8 @@
 
       function exibirImagem() {
         imgSusto.style.display = "block";
-        imgSusto.style.height= "100%";
-        imgSusto.style.width= "100%";
+        imgSusto.style.height = "100%";
+        imgSusto.style.width = "100%";
         maze.remove();
       }
       function exibirVideo() {
