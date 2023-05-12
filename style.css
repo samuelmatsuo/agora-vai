@@ -205,7 +205,7 @@ a {
     transform: translateY(0);
   }
   20% {
-    transform: translateY(-5px);
+    transform: translateY(-50px);
   }
 }
 
