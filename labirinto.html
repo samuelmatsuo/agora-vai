@@ -9,40 +9,440 @@
 </head>
 <body>
     <div class="maze">
-        <div class="wall" style="top: 0; left: 80px;"></div>
-        <div class="wall" style="top: 20px; left: 80px;"></div>
-        <div class="wall" style="top: 40px; left: 80px;"></div>
-        <div class="wall" style="top: 60px; left: 80px;"></div>
-        <div class="wall" style="top: 80px; left: 80px;"></div>
-        <div class="wall" style="top: 100px; left: 80px;"></div>
-        <div class="wall" style="top: 120px; left: 80px;"></div>
-        <div class="wall" style="top: 140px; left: 80px;"></div>
-        <div class="wall" style="top: 160px; left: 80px;"></div>
-        <div class="wall" style="top: 180px; left: 80px;"></div>
-        <div class="wall" style="top: 200px; left: 80px;"></div>
-        <div class="wall" style="top: 220px; left: 80px;"></div>
-        <div class="wall" style="top: 240px; left: 80px;"></div>
-        <div class="wall" style="top: 260px; left: 80px;"></div>
-        <div class="wall" style="top: 280px; left: 80px;"></div>
-        <div class="wall" style="top: 300px; left: 80px;"></div>
-        <div class="wall" style="top: 340px; left: 80px;"></div>        
-        <div class="wall" style="top: 360px; left: 80px;"></div>        
-        <div class="wall" style="top: 380px; left: 80px;"></div>        
-        <div class="wall" style="top: 400px; left: 80px;"></div>        
-        <div class="wall" style="top: 400px; left: 60px;"></div>        
-        <div class="wall" style="top: 400px; left: 40px;"></div>        
-        <div class="wall" style="top: 400px; left: 20px;"></div>        
-        <div class="wall" style="top: 400px; left: 0px;"></div>        
+        <!-- parede externa aqui -->
+        <div class="wall" style="top: -20px; left: 0px;"></div>
+        <div class="wall" style="top: -20px; left: 20px;"></div>
+        <div class="wall" style="top: -20px; left: 40px;"></div>
+        <div class="wall" style="top: -20px; left: 60px;"></div>
+        <div class="wall" style="top: -20px; left: 80px;"></div>
+        <div class="wall" style="top: -20px; left: 100px;"></div>
+        <div class="wall" style="top: -20px; left: 120px;"></div>
+        <div class="wall" style="top: -20px; left: 140px;"></div>
+        <div class="wall" style="top: -20px; left: 160px;"></div>
+        <div class="wall" style="top: -20px; left: 180px;"></div>
+        <div class="wall" style="top: -20px; left: 200px;"></div>
+        <div class="wall" style="top: -20px; left: 220px;"></div>
+        <div class="wall" style="top: -20px; left: 240px;"></div>
+        <div class="wall" style="top: -20px; left: 260px;"></div>
+        <div class="wall" style="top: -20px; left: 280px;"></div>
+        <div class="wall" style="top: -20px; left: 300px;"></div>
+        <div class="wall" style="top: -20px; left: 320px;"></div>
+        <div class="wall" style="top: -20px; left: 340px;"></div>
+        <div class="wall" style="top: -20px; left: 360px;"></div>
+        <div class="wall" style="top: -20px; left: 380px;"></div>
+        <div class="wall" style="top: -20px; left: 400px;"></div>
+        <div class="wall" style="top: -20px; left: 420px;"></div>
+        <div class="wall" style="top: -20px; left: 440px;"></div>
+        <div class="wall" style="top: -20px; left: 460px;"></div>
+        <div class="wall" style="top: -20px; left: 480px;"></div>
+        <div class="wall" style="top: -20px; left: 500px;"></div>
+        <div class="wall" style="top: -20px; left: 500px;"></div>
+        <div class="wall" style="top: -20px; left: 500px;"></div>
+        <div class="wall" style="top: -20px; left: 500px;"></div>
+        <div class="wall" style="top: -20px; left: 500px;"></div>
+        <div class="wall" style="top: 0px; left: 500px;"></div>
+        <div class="wall" style="top: 20px; left: 500px;"></div>
+        <div class="wall" style="top: 40px; left: 500px;"></div>
+        <div class="wall" style="top: 60px; left: 500px;"></div>
+        <div class="wall" style="top: 80px; left: 500px;"></div>
+        <div class="wall" style="top: 100px; left: 500px;"></div>
+        <div class="wall" style="top: 120px; left: 500px;"></div>
+        <div class="wall" style="top: 140px; left: 500px;"></div>
+        <div class="wall" style="top: 160px; left: 500px;"></div>
+        <div class="wall" style="top: 180px; left: 500px;"></div>
+        <div class="wall" style="top: 200px; left: 500px;"></div>
+        <div class="wall" style="top: 220px; left: 500px;"></div>
+        <div class="wall" style="top: 240px; left: 500px;"></div>
+        <div class="wall" style="top: 260px; left: 500px;"></div>
+        <div class="wall" style="top: 280px; left: 500px;"></div>
+        <div class="wall" style="top: 300px; left: 500px;"></div>
+        <div class="wall" style="top: 320px; left: 500px;"></div>
+        <div class="wall" style="top: 340px; left: 500px;"></div>
+        <div class="wall" style="top: 360px; left: 500px;"></div>
+        <div class="wall" style="top: 380px; left: 500px;"></div>
+        <div class="wall" style="top: 400px; left: 500px;"></div>
+        <div class="wall" style="top: 420px; left: 500px;"></div>
+        <div class="wall" style="top: 440px; left: 500px;"></div>
+        <div class="wall" style="top: 460px; left: 500px;"></div>
+        <div class="wall" style="top: 480px; left: 500px;"></div>
+        <div class="wall" style="top: 500px; left: 500px;"></div>
+        <div class="wall" style="top: 500px; left: 500px;"></div>
+        <div class="wall" style="top: 500px; left: 480px;"></div>
+        <div class="wall" style="top: 500px; left: 460px;"></div>
+        <div class="wall" style="top: 500px; left: 440px;"></div>
+        <div class="wall" style="top: 500px; left: 420px;"></div>
+        <div class="wall" style="top: 500px; left: 400px;"></div>
+        <div class="wall" style="top: 500px; left: 380px;"></div>
+        <div class="wall" style="top: 500px; left: 360px;"></div>
+        <div class="wall" style="top: 500px; left: 340px;"></div>
+        <div class="wall" style="top: 500px; left: 320px;"></div>
+        <div class="wall" style="top: 500px; left: 300px;"></div>
+        <div class="wall" style="top: 500px; left: 280px;"></div>
+        <div class="wall" style="top: 500px; left: 260px;"></div>
+        <div class="wall" style="top: 500px; left: 240px;"></div>
+        <div class="wall" style="top: 500px; left: 220px;"></div>
+        <div class="wall" style="top: 500px; left: 200px;"></div>
+        <div class="wall" style="top: 500px; left: 180px;"></div>
+        <div class="wall" style="top: 500px; left: 160px;"></div>
+        <div class="wall" style="top: 500px; left: 140px;"></div>
+        <div class="wall" style="top: 500px; left: 120px;"></div>
+        <div class="wall" style="top: 500px; left: 100px;"></div>
+        <div class="wall" style="top: 500px; left: 80px;"></div>
+        <div class="wall" style="top: 500px; left: 60px;"></div>
+        <div class="wall" style="top: 500px; left: 40px;"></div>
+        <div class="wall" style="top: 500px; left: 20px;"></div>
+        <div class="wall" style="top: 500px; left: 0px;"></div>
+        <div class="wall" style="top: 500px; left: -20px;"></div>
+        <div class="wall" style="top: 480px; left: -20px;"></div>
+        <div class="wall" style="top: 460px; left: -20px;"></div>
+        <div class="wall" style="top: 440px; left: -20px;"></div>
+        <div class="wall" style="top: 420px; left: -20px;"></div>
+        <div class="wall" style="top: -20px; left: -20px;"></div>
+        <div class="wall" style="top: 0px; left: -20px;"></div>
+        <div class="wall" style="top: 20px; left: -20px;"></div>
+        <div class="wall" style="top: 40px; left: -20px;"></div>
+        <div class="wall" style="top: 60px; left: -20px;"></div>
+        <div class="wall" style="top: 80px; left: -20px;"></div>
+        <div class="wall" style="top: 100px; left: -20px;"></div>
+        <div class="wall" style="top: 120px; left: -20px;"></div>
+        <div class="wall" style="top: 140px; left: -20px;"></div>
+        <div class="wall" style="top: 160px; left: -20px;"></div>
+        <div class="wall" style="top: 180px; left: -20px;"></div>
+        <div class="wall" style="top: 200px; left: -20px;"></div>
+        <div class="wall" style="top: 220px; left: -20px;"></div>
+        <div class="wall" style="top: 220px; left: -20px;"></div>
+        <div class="wall" style="top: 240px; left: -20px;"></div>
+        <div class="wall" style="top: 260px; left: -20px;"></div>
+        <div class="wall" style="top: 280px; left: -20px;"></div>
+        <div class="wall" style="top: 300px; left: -20px;"></div>
+        <div class="wall" style="top: 320px; left: -20px;"></div>
+        <div class="wall" style="top: 340px; left: -20px;"></div>
+        <div class="wall" style="top: 360px; left: -20px;"></div>
+        <div class="wall" style="top: 380px; left: -20px;"></div>
+        <div class="wall" style="top: 400px; left: -20px;"></div>
 
+        <div class="wall" style="top: 0px; left: 20px;"></div>
+        <div class="wall" style="top: 20px; left: 20px;"></div>
+        <div class="wall" style="top: 40px; left: 20px;"></div>
+        <div class="wall" style="top: 60px; left: 20px;"></div>
+        <div class="wall" style="top: 80px; left: 20px;"></div>
+        <div class="wall" style="top: 100px; left: 20px;"></div>
+        <div class="wall" style="top: 120px; left: 20px;"></div>
+        <div class="wall" style="top: 140px; left: 20px;"></div>
+        <div class="wall" style="top: 160px; left: 20px;"></div>
+        <div class="wall" style="top: 180px; left: 20px;"></div>
+        <div class="wall" style="top: 200px; left: 20px;"></div>
+        <div class="wall" style="top: 220px; left: 20px;"></div>
+        <div class="wall" style="top: 240px; left: 20px;"></div>
+        <div class="wall" style="top: 260px; left: 20px;"></div>
+        <div class="wall" style="top: 280px; left: 20px;"></div>
+        <div class="wall" style="top: 300px; left: 20px;"></div>
+        <div class="wall" style="top: 320px; left: 20px;"></div>
+        <div class="wall" style="top: 340px; left: 20px;"></div>
+        <div class="wall" style="top: 360px; left: 20px;"></div>
+        <div class="wall" style="top: 380px; left: 20px;"></div>
+        <div class="wall" style="top: 400px; left: 20px;"></div>
+        <div class="wall" style="top: 420px; left: 20px;"></div>
+        <div class="wall" style="top: 440px; left: 20px;"></div>
+        <div class="wall" style="top: 460px; left: 20px;"></div>
+        <div class="wall" style="top: 460px; left: 40px;"></div>
+        <div class="wall" style="top: 460px; left: 60px;"></div>
+        <div class="wall" style="top: 460px; left: 80px;"></div>
+        <div class="wall" style="top: 460px; left: 100px;"></div>
+        <div class="wall" style="top: 460px; left: 120px;"></div>
+        <div class="wall" style="top: 460px; left: 140px;"></div>
+        <div class="wall" style="top: 460px; left: 160px;"></div>
+        <div class="wall" style="top: 460px; left: 180px;"></div>
+        <div class="wall" style="top: 460px; left: 200px;"></div>
+        <div class="wall" style="top: 460px; left: 220px;"></div>
+        <div class="wall" style="top: 460px; left: 240px;"></div>
+        <div class="wall" style="top: 460px; left: 260px;"></div>
+        <div class="wall" style="top: 460px; left: 280px;"></div>
+        <div class="wall" style="top: 460px; left: 300px;"></div>
+        <div class="wall" style="top: 460px; left: 320px;"></div>
+        <div class="wall" style="top: 460px; left: 340px;"></div>
+        <div class="wall" style="top: 460px; left: 360px;"></div>
+        <div class="wall" style="top: 460px; left: 380px;"></div>
+        <div class="wall" style="top: 460px; left: 400px;"></div>
+        <div class="wall" style="top: 460px; left: 420px;"></div>
+        <div class="wall" style="top: 460px; left: 440px;"></div>
+        
+        
+        
+        
+
+
+        
+        
+        
+        
+        
+        
+     
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="wall" style="top: 220px; left: 260px;"></div>
+        <div class="wall" style="top: 240px; left: 260px;"></div>
+        <div class="wall" style="top: 260px; left: 260px;"></div>
+        <div class="wall" style="top: 260px; left: 240px;"></div>
+        <div class="wall" style="top: 260px; left: 220px;"></div>
+        <div class="wall" style="top: 240px; left: 220px;"></div>
+        <div class="wall" style="top: 220px; left: 220px;"></div>
+        <div class="wall" style="top: 200px; left: 220px;"></div>
+        <div class="wall" style="top: 180px; left: 220px;"></div>
+        <div class="wall" style="top: 180px; left: 240px;"></div>
+        <div class="wall" style="top: 180px; left: 260px;"></div>
+        <div class="wall" style="top: 180px; left: 280px;"></div>
+        <div class="wall" style="top: 180px; left: 300px;"></div>
+        <div class="wall" style="top: 200px; left: 300px;"></div>
+        <div class="wall" style="top: 220px; left: 300px;"></div>
+        <div class="wall" style="top: 240px; left: 300px;"></div>
+        <div class="wall" style="top: 260px; left: 300px;"></div>
+        <div class="wall" style="top: 280px; left: 300px;"></div>
+        <div class="wall" style="top: 300px; left: 300px;"></div>
+        <div class="wall" style="top: 300px; left: 280px;"></div>
+        <div class="wall" style="top: 300px; left: 260px;"></div>
+        <div class="wall" style="top: 300px; left: 240px;"></div>
+        <div class="wall" style="top: 300px; left: 220px;"></div>
+        <div class="wall" style="top: 300px; left: 200px;"></div>
+        <div class="wall" style="top: 300px; left: 180px;"></div>
+        <div class="wall" style="top: 280px; left: 180px;"></div>
+        <div class="wall" style="top: 260px; left: 180px;"></div>
+        <div class="wall" style="top: 240px; left: 180px;"></div>
+        <div class="wall" style="top: 220px; left: 180px;"></div>
+        <div class="wall" style="top: 200px; left: 180px;"></div>
+        <div class="wall" style="top: 180px; left: 180px;"></div>
+        <div class="wall" style="top: 160px; left: 180px;"></div>
+        <div class="wall" style="top: 140px; left: 180px;"></div>
+        <div class="wall" style="top: 140px; left: 200px;"></div>
+        <div class="wall" style="top: 140px; left: 220px;"></div>
+        <div class="wall" style="top: 140px; left: 240px;"></div>
+        <div class="wall" style="top: 140px; left: 260px;"></div>
+        <div class="wall" style="top: 140px; left: 280px;"></div>
+        <div class="wall" style="top: 140px; left: 300px;"></div>
+        <div class="wall" style="top: 140px; left: 320px;"></div>
+        <div class="wall" style="top: 140px; left: 340px;"></div>
+        <div class="wall" style="top: 160px; left: 340px;"></div>
+        <div class="wall" style="top: 180px; left: 340px;"></div>
+        <div class="wall" style="top: 200px; left: 340px;"></div>
+        <div class="wall" style="top: 220px; left: 340px;"></div>
+        <div class="wall" style="top: 240px; left: 340px;"></div>
+        <div class="wall" style="top: 260px; left: 340px;"></div>
+        <div class="wall" style="top: 280px; left: 340px;"></div>
+        <div class="wall" style="top: 300px; left: 340px;"></div>
+        <div class="wall" style="top: 320px; left: 340px;"></div>
+        <div class="wall" style="top: 340px; left: 340px;"></div>
+        <div class="wall" style="top: 340px; left: 320px;"></div>
+        <div class="wall" style="top: 340px; left: 300px;"></div>
+        <div class="wall" style="top: 340px; left: 280px;"></div>
+        <div class="wall" style="top: 340px; left: 260px;"></div>
+        <div class="wall" style="top: 340px; left: 240px;"></div>
+        <div class="wall" style="top: 340px; left: 220px;"></div>
+        <div class="wall" style="top: 340px; left: 200px;"></div>
+        <div class="wall" style="top: 340px; left: 180px;"></div>
+        <div class="wall" style="top: 340px; left: 160px;"></div>
+        <div class="wall" style="top: 340px; left: 140px;"></div>
+        <div class="wall" style="top: 320px; left: 140px;"></div>
+        <div class="wall" style="top: 300px; left: 140px;"></div>
+        <div class="wall" style="top: 280px; left: 140px;"></div>
+        <div class="wall" style="top: 260px; left: 140px;"></div>
+        <div class="wall" style="top: 240px; left: 140px;"></div>
+        <div class="wall" style="top: 220px; left: 140px;"></div>
+        <div class="wall" style="top: 200px; left: 140px;"></div>
+        <div class="wall" style="top: 180px; left: 140px;"></div>
+        <div class="wall" style="top: 160px; left: 140px;"></div>
+        <div class="wall" style="top: 140px; left: 140px;"></div>
+        <div class="wall" style="top: 120px; left: 140px;"></div>
+        <div class="wall" style="top: 100px; left: 140px;"></div>
+        <div class="wall" style="top: 100px; left: 160px;"></div>
+        <div class="wall" style="top: 100px; left: 180px;"></div>
+        <div class="wall" style="top: 100px; left: 200px;"></div>
+        <div class="wall" style="top: 100px; left: 220px;"></div>
+        <div class="wall" style="top: 100px; left: 240px;"></div>
+        <div class="wall" style="top: 100px; left: 260px;"></div>
+        <div class="wall" style="top: 100px; left: 280px;"></div>
+        <div class="wall" style="top: 100px; left: 300px;"></div>
+        <div class="wall" style="top: 100px; left: 320px;"></div>
+        <div class="wall" style="top: 100px; left: 340px;"></div>
+        <div class="wall" style="top: 100px; left: 360px;"></div>
+        <div class="wall" style="top: 100px; left: 380px;"></div>
+        <div class="wall" style="top: 120px; left: 380px;"></div>
+        <div class="wall" style="top: 140px; left: 380px;"></div>
+        <div class="wall" style="top: 160px; left: 380px;"></div>
+        <div class="wall" style="top: 160px; left: 380px;"></div>
+        <div class="wall" style="top: 180px; left: 380px;"></div>
+        <div class="wall" style="top: 200px; left: 380px;"></div>
+        <div class="wall" style="top: 220px; left: 380px;"></div>
+        <div class="wall" style="top: 240px; left: 380px;"></div>
+        <div class="wall" style="top: 260px; left: 380px;"></div>
+        <div class="wall" style="top: 280px; left: 380px;"></div>
+        <div class="wall" style="top: 300px; left: 380px;"></div>
+        <div class="wall" style="top: 320px; left: 380px;"></div>
+        <div class="wall" style="top: 340px; left: 380px;"></div>
+        <div class="wall" style="top: 360px; left: 380px;"></div>
+        <div class="wall" style="top: 380px; left: 380px;"></div>
+        <div class="wall" style="top: 380px; left: 360px;"></div>
+        <div class="wall" style="top: 380px; left: 340px;"></div>
+        <div class="wall" style="top: 380px; left: 320px;"></div>
+        <div class="wall" style="top: 380px; left: 300px;"></div>
+        <div class="wall" style="top: 380px; left: 280px;"></div>
+        <div class="wall" style="top: 380px; left: 260px;"></div>
+        <div class="wall" style="top: 380px; left: 240px;"></div>
+        <div class="wall" style="top: 380px; left: 220px;"></div>
+        <div class="wall" style="top: 380px; left: 200px;"></div>
+        <div class="wall" style="top: 380px; left: 180px;"></div>
+        <div class="wall" style="top: 380px; left: 160px;"></div>
+        <div class="wall" style="top: 380px; left: 140px;"></div>
+        <div class="wall" style="top: 380px; left: 120px;"></div>
+        <div class="wall" style="top: 380px; left: 100px;"></div>
+        <div class="wall" style="top: 360px; left: 100px;"></div>
+        <div class="wall" style="top: 340px; left: 100px;"></div>
+        <div class="wall" style="top: 320px; left: 100px;"></div>
+        <div class="wall" style="top: 300px; left: 100px;"></div>
+        <div class="wall" style="top: 280px; left: 100px;"></div>
+        <div class="wall" style="top: 260px; left: 100px;"></div>
+        <div class="wall" style="top: 240px; left: 100px;"></div>
+        <div class="wall" style="top: 220px; left: 100px;"></div>
+        <div class="wall" style="top: 200px; left: 100px;"></div>
+        <div class="wall" style="top: 180px; left: 100px;"></div>
+        <div class="wall" style="top: 160px; left: 100px;"></div>
+        <div class="wall" style="top: 140px; left: 100px;"></div>
+        <div class="wall" style="top: 120px; left: 100px;"></div>
+        <div class="wall" style="top: 100px; left: 100px;"></div>
+        <div class="wall" style="top: 80px; left: 100px;"></div>
+        <div class="wall" style="top: 60px; left: 100px;"></div>
+        <div class="wall" style="top: 60px; left: 120px;"></div>
+        <div class="wall" style="top: 60px; left: 140px;"></div>
+        <div class="wall" style="top: 60px; left: 160px;"></div>
+        <div class="wall" style="top: 60px; left: 180px;"></div>
+        <div class="wall" style="top: 60px; left: 200px;"></div>
+        <div class="wall" style="top: 60px; left: 220px;"></div>
+        <div class="wall" style="top: 60px; left: 240px;"></div>
+        <div class="wall" style="top: 60px; left: 260px;"></div>
+        <div class="wall" style="top: 60px; left: 280px;"></div>
+        <div class="wall" style="top: 60px; left: 300px;"></div>
+        <div class="wall" style="top: 60px; left: 320px;"></div>
+        <div class="wall" style="top: 60px; left: 340px;"></div>
+        <div class="wall" style="top: 60px; left: 360px;"></div>
+        <div class="wall" style="top: 60px; left: 380px;"></div>
+        <div class="wall" style="top: 60px; left: 400px;"></div>
+        <div class="wall" style="top: 60px; left: 420px;"></div>
+        <div class="wall" style="top: 80px; left: 420px;"></div>
+        <div class="wall" style="top: 100px; left: 420px;"></div>
+        <div class="wall" style="top: 120px; left: 420px;"></div>
+        <div class="wall" style="top: 140px; left: 420px;"></div>
+        <div class="wall" style="top: 160px; left: 420px;"></div>
+        <div class="wall" style="top: 180px; left: 420px;"></div>
+        <div class="wall" style="top: 200px; left: 420px;"></div>
+        <div class="wall" style="top: 220px; left: 420px;"></div>
+        <div class="wall" style="top: 240px; left: 420px;"></div>
+        <div class="wall" style="top: 260px; left: 420px;"></div>
+        <div class="wall" style="top: 280px; left: 420px;"></div>
+        <div class="wall" style="top: 300px; left: 420px;"></div>
+        <div class="wall" style="top: 320px; left: 420px;"></div>
+        <div class="wall" style="top: 340px; left: 420px;"></div>
+        <div class="wall" style="top: 360px; left: 420px;"></div>
+        <div class="wall" style="top: 380px; left: 420px;"></div>
+        <div class="wall" style="top: 400px; left: 420px;"></div>
+        <div class="wall" style="top: 420px; left: 420px;"></div>
+        <div class="wall" style="top: 420px; left: 400px;"></div>
+        <div class="wall" style="top: 420px; left: 380px;"></div>
+        <div class="wall" style="top: 420px; left: 360px;"></div>
+        <div class="wall" style="top: 420px; left: 340px;"></div>
+        <div class="wall" style="top: 420px; left: 320px;"></div>
+        <div class="wall" style="top: 420px; left: 300px;"></div>
+        <div class="wall" style="top: 420px; left: 280px;"></div>
+        <div class="wall" style="top: 420px; left: 260px;"></div>
+        <div class="wall" style="top: 420px; left: 240px;"></div>
+        <div class="wall" style="top: 420px; left: 220px;"></div>
+        <div class="wall" style="top: 420px; left: 200px;"></div>
+        <div class="wall" style="top: 420px; left: 180px;"></div>
+        <div class="wall" style="top: 420px; left: 160px;"></div>
+        <div class="wall" style="top: 420px; left: 140px;"></div>
+        <div class="wall" style="top: 420px; left: 120px;"></div>
+        <div class="wall" style="top: 420px; left: 100px;"></div>
+        <div class="wall" style="top: 420px; left: 80px;"></div>
+        <div class="wall" style="top: 420px; left: 60px;"></div>
+        <div class="wall" style="top: 400px; left: 60px;"></div>
+        <div class="wall" style="top: 380px; left: 60px;"></div>
+        <div class="wall" style="top: 360px; left: 60px;"></div>
+        <div class="wall" style="top: 340px; left: 60px;"></div>
+        <div class="wall" style="top: 320px; left: 60px;"></div>
+        <div class="wall" style="top: 300px; left: 60px;"></div>
+        <div class="wall" style="top: 280px; left: 60px;"></div>
+        <div class="wall" style="top: 260px; left: 60px;"></div>
+        <div class="wall" style="top: 240px; left: 60px;"></div>
+        <div class="wall" style="top: 220px; left: 60px;"></div>
+        <div class="wall" style="top: 200px; left: 60px;"></div>
+        <div class="wall" style="top: 180px; left: 60px;"></div>
+        <div class="wall" style="top: 160px; left: 60px;"></div>
+        <div class="wall" style="top: 140px; left: 60px;"></div>
+        <div class="wall" style="top: 120px; left: 60px;"></div>
+        <div class="wall" style="top: 100px; left: 60px;"></div>
+        <div class="wall" style="top: 80px; left: 60px;"></div>
+        <div class="wall" style="top: 60px; left: 60px;"></div>
+        <div class="wall" style="top: 40px; left: 60px;"></div>
+        <div class="wall" style="top: 20px; left: 60px;"></div>
+        <div class="wall" style="top: 20px; left: 60px;"></div>
+        <div class="wall" style="top: 20px; left: 80px;"></div>
+        <div class="wall" style="top: 20px; left: 100px;"></div>
+        <div class="wall" style="top: 20px; left: 120px;"></div>
+        <div class="wall" style="top: 20px; left: 140px;"></div>
+        <div class="wall" style="top: 20px; left: 160px;"></div>
+        <div class="wall" style="top: 20px; left: 180px;"></div>
+        <div class="wall" style="top: 20px; left: 200px;"></div>
+        <div class="wall" style="top: 20px; left: 220px;"></div>
+        <div class="wall" style="top: 20px; left: 240px;"></div>
+        <div class="wall" style="top: 20px; left: 260px;"></div>
+        <div class="wall" style="top: 20px; left: 280px;"></div>
+        <div class="wall" style="top: 20px; left: 300px;"></div>
+        <div class="wall" style="top: 20px; left: 320px;"></div>
+        <div class="wall" style="top: 20px; left: 340px;"></div>
+        <div class="wall" style="top: 20px; left: 360px;"></div>
+        <div class="wall" style="top: 20px; left: 380px;"></div>
+        <div class="wall" style="top: 20px; left: 400px;"></div>
+        <div class="wall" style="top: 20px; left: 420px;"></div>
+        <div class="wall" style="top: 20px; left: 440px;"></div>
+        <div class="wall" style="top: 20px; left: 460px;"></div>
+        <div class="wall" style="top: 40px; left: 460px;"></div>
+        <div class="wall" style="top: 60px; left: 460px;"></div>
+        <div class="wall" style="top: 80px; left: 460px;"></div>
+        <div class="wall" style="top: 100px; left: 460px;"></div>
+        <div class="wall" style="top: 120px; left: 460px;"></div>
+        <div class="wall" style="top: 140px; left: 460px;"></div>
+        <div class="wall" style="top: 160px; left: 460px;"></div>
+        <div class="wall" style="top: 180px; left: 460px;"></div>
+        <div class="wall" style="top: 200px; left: 460px;"></div>
+        <div class="wall" style="top: 220px; left: 460px;"></div>
+        <div class="wall" style="top: 240px; left: 460px;"></div>
+        <div class="wall" style="top: 260px; left: 460px;"></div>
+        <div class="wall" style="top: 280px; left: 460px;"></div>
+        <div class="wall" style="top: 300px; left: 460px;"></div>
+        <div class="wall" style="top: 320px; left: 460px;"></div>
+        <div class="wall" style="top: 340px; left: 460px;"></div>
+        <div class="wall" style="top: 360px; left: 460px;"></div>
+        <div class="wall" style="top: 380px; left: 460px;"></div>
+        <div class="wall" style="top: 400px; left: 460px;"></div>
+        <div class="wall" style="top: 420px; left: 460px;"></div>
         <div class="wall" style="top: 440px; left: 460px;"></div>
         <div class="wall" style="top: 460px; left: 460px;"></div>
-        <div class="wall" style="top: 480px; left: 460px;"></div>
-        <div class="wall" style="top: 440px; left: 460px;"></div>
-        <div class="wall" style="top: 460px; left: 460px;"></div>
-        <div class="wall" style="top: 480px; left: 460px;"></div>
+        
+       
+        
+        <!-- inicia aqui -->
         <div class="start" style="top: 0; left: 0;"></div>
-        <div class="end" style="top: 460px; left: 480px;"></div>
+        <!-- termina aqui -->
+        <div class="end" style="top: 240px; left: 240px; background-color: brown;" ></div>
         <div class="player"></div>
+    </div>
+    <audio src=""></audio>
         <script>
             const player = document.querySelector('.player');
             const walls = document.querySelectorAll('.wall');
@@ -97,9 +497,9 @@
               return false;
             }
             
-            function isWin() {
+             function isWin() {
               const end = document.querySelector('.end');
-              return parseInt(player.style.top) === parseInt(end.style.top) && parseInt(player.style.left) === parseInt(end.style.left);
+             return parseInt(player.style.top) === parseInt(end.style.top) && parseInt(player.style.left) === parseInt(end.style.left);
             }
             
             function gameOver() {
